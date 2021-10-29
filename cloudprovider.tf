@@ -17,7 +17,7 @@ resource "harness_cloudprovider_kubernetes" "demo" {
     create_before_destroy = true
   }
 }
-resource "harness_cloudprovider_kubernetes_sa" "demo" {
+resource "harness_cloudprovider_kubernetes" "demo" {
   name = "${var.prefix}-kubernetes-sa"
 
   authentication {
