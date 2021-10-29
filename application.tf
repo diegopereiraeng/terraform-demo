@@ -4,9 +4,7 @@ resource "harness_application" "demo" {
   // Any objects that have a usage_scope defined can potentially hit an error if the application is
   // in the process of being created.
   depends_on = [
-    harness_cloudprovider_kubernetes.demo,
-    harness_encrypted_text.github_token,
-    harness_git_connector.demo
+    harness_cloudprovider_kubernetes.demo
   ]
 
   name                         = var.application_name
