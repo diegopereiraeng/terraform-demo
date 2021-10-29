@@ -17,7 +17,7 @@ notificationRules:
   - Account Administrator
 phases:
 - type: KUBERNETES
-  computeProviderName: Kubernetes Demo
+  computeProviderName: Kubernetes harnesstf
   daemonSet: false
   name: Canary Deployment
   phaseSteps:
@@ -62,7 +62,7 @@ phases:
     - name: entityType
       value: SERVICE
 - type: KUBERNETES
-  computeProviderName: Kubernetes Demo
+  computeProviderName: Kubernetes harnesstf
   daemonSet: false
   name: Rolling Upgrade
   phaseSteps:
@@ -137,7 +137,7 @@ preDeploymentSteps:
     timeoutMillis: 60000
 rollbackPhases:
 - type: KUBERNETES
-  computeProviderName: Kubernetes Demo
+  computeProviderName: Kubernetes harnesstf
   daemonSet: false
   name: Rollback Canary Deployment
   phaseNameForRollback: Canary Deployment
@@ -171,7 +171,7 @@ rollbackPhases:
     - name: entityType
       value: SERVICE
 - type: KUBERNETES
-  computeProviderName: Kubernetes Demo
+  computeProviderName: Kubernetes harnesstf
   daemonSet: false
   name: Rollback Rolling Upgrade
   phaseNameForRollback: Rolling Upgrade

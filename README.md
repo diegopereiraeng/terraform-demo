@@ -1,4 +1,4 @@
-# Terraform Demo
+# Terraform harnesstf
 
 This project serves as an example of how to spin up a new project in Harness CD using the [Harness Terraform Provider](https://github.com/harness-io/terraform-provider-harness). This can be used as a starting point for onboarding a new team onto the platform.
 
@@ -9,7 +9,7 @@ When you apply this module you will have
 
 ## Disclaimer
 
-This product is not supported by the Harness Customer support team. If you have any questions please open a [new issue](https://github.com/harness-io/terraform-demo/issues/new) or join our slack [channel](https://harnesscommunity.slack.com/archives/C02G9CUNF1S).
+This product is not supported by the Harness Customer support team. If you have any questions please open a [new issue](https://github.com/harness-io/terraform-harnesstf/issues/new) or join our slack [channel](https://harnesscommunity.slack.com/archives/C02G9CUNF1S).
 
 ## Pre-requisites
 
@@ -23,9 +23,9 @@ This product is not supported by the Harness Customer support team. If you have 
 
 | Variable | Description | Default |
 | -------- | ----------- | ------- |
-| `application_name` | The name of the Harness application to be created. | `Harness Terraform Demo` |
+| `application_name` | The name of the Harness application to be created. | `Harness Terraform harnesstf` |
 | `github_token` | The github token for used for the git connector. | |
 | `github_username` | The github username used for the git connector. | |
-| `prefix` | A prefix to use to ensure account level settings are unique (i.e. cloud providers, secrets, connectors, etc.). | `demo` |
+| `prefix` | A prefix to use to ensure account level settings are unique (i.e. cloud providers, secrets, connectors, etc.). | `harnesstf` |
 | `repository_branch` | The branch of the repository to use for the git connector. | `main` |
-| `repository_url` | The url of the git repository. This is where the Kubernetes manifest will be located | `https://github.com/harness-io/terraform-demo`
+| `repository_url` | The url of the git repository. This is where the Kubernetes manifest will be located | `https://github.com/harness-io/terraform-harnesstf`

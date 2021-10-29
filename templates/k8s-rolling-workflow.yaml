@@ -18,7 +18,7 @@ notificationRules:
   - Account Administrator
 phases:
 - type: KUBERNETES
-  computeProviderName: Kubernetes Demo
+  computeProviderName: Kubernetes harnesstf
   daemonSet: false
   infraDefinitionName: k8s-dev
   name: Rolling
@@ -55,7 +55,7 @@ phases:
       value: INFRASTRUCTURE_DEFINITION
 rollbackPhases:
 - type: KUBERNETES
-  computeProviderName: Kubernetes Demo
+  computeProviderName: Kubernetes harnesstf
   daemonSet: false
   infraDefinitionName: k8s-dev
   name: Rollback Rolling

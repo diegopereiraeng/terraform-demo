@@ -1,5 +1,5 @@
 
-resource "harness_cloudprovider_kubernetes" "demo" {
+resource "harness_cloudprovider_kubernetes" "harnesstf" {
   name = "${var.prefix}-kubernetes-sa"
 
   authentication {
@@ -8,16 +8,6 @@ resource "harness_cloudprovider_kubernetes" "demo" {
       service_account_token_secret_name = "${var.prefix}-github-token"
       ca_certificate_secret_name = "${var.prefix}-github-token"
     }
-  }
-
-
-
-  usage_scope {
-    environment_filter_type = "NON_PRODUCTION_ENVIRONMENTS"
-  }
-
-  usage_scope {
-    environment_filter_type = "PRODUCTION_ENVIRONMENTS"
   }
 
   lifecycle {

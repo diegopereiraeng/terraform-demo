@@ -1,4 +1,4 @@
-resource "harness_cloudprovider_kubernetes" "demo" {
+resource "harness_cloudprovider_kubernetes" "harnesstf" {
   name = "${var.prefix}-kubernetes"
 
   authentication {

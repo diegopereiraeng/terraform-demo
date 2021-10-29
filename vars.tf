@@ -6,7 +6,7 @@ variable "cluster_token" {
 
 variable "application_name" {
   description = "The name of the Harness application to be created."
-  default = "Harness Terraform Demo"
+  default = "Harness Terraform harnesstf"
 }
 
 variable "prefix" {
@@ -16,7 +16,7 @@ variable "prefix" {
 
 variable "repository_url" {
   description = "The url of the repository to be cloned."
-  default = "https://github.com/diegopereiraeng/terraform-demo"
+  default = "https://github.com/diegopereiraeng/terraform-harnesstf"
 }
 
 variable "repository_branch" {

@@ -1,10 +1,10 @@
-resource "harness_application" "demo" {
+resource "harness_application" "harnesstf" {
 
   // This is a workaround for the race condition defined here https://harness.atlassian.net/browse/SWAT-5332
   // Any objects that have a usage_scope defined can potentially hit an error if the application is
   // in the process of being created.
   depends_on = [
-    harness_cloudprovider_kubernetes.demo
+    harness_cloudprovider_kubernetes.harnesstf
   ]
 
   name                         = var.application_name
