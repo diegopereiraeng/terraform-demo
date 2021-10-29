@@ -1,8 +1,6 @@
-variable "github_username" {
-  description = "The github username used for the git connector."
-}
 
-variable "github_token" {
+
+variable "cluster_token" {
   description = "The github token for used for the git connector."
 }
 
@@ -18,7 +16,7 @@ variable "prefix" {
 
 variable "repository_url" {
   description = "The url of the repository to be cloned."
-  default = "https://github.com/harness-io/terraform-demo"
+  default = "https://github.com/diegopereiraeng/terraform-demo"
 }
 
 variable "repository_branch" {
