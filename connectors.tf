@@ -3,7 +3,7 @@ data "harness_secret_manager" "default" {
 }
 
 resource "harness_encrypted_text" "cluster_token" {
-  name              = "${var.prefix}-github-token"
+  name              = "${var.prefix}-cluster_token"
   value             = var.cluster_token
   secret_manager_id = data.harness_secret_manager.default.id
 

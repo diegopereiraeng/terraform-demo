@@ -9,5 +9,5 @@ terraform {
 
 provider "harness" {
   # Configuration options
-  # For this harnesstf the configuration is set through environment variables
+  # For this demo the configuration is set through environment variables
 }
